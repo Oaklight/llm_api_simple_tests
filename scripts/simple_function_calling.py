@@ -44,4 +44,4 @@ response = llm.query(
 )
 print(response["content"])
 
-cprint(response)
+cprint(response, pretty=True)  # noqa: F821
