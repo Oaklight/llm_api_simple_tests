@@ -9,6 +9,8 @@ load_dotenv()
 BASE_URL = os.getenv("BASE_URL")
 API_KEY = os.getenv("API_KEY")
 
+model_name = os.getenv("MODEL", "deepseek-v3")
+
 client = OpenAI(base_url=BASE_URL, api_key=API_KEY)
 
 tool_registry = ToolRegistry()
@@ -27,7 +29,7 @@ def c_to_f(celsius: float) -> float:
 
 
 response = client.chat.completions.create(
-    model=client.models.list().data[0].id,
+    model=model_name,
     messages=[{"role": "user", "content": "What's the weather like in San Francisco?"}],
     tools=tool_registry.get_tools_json(),
     tool_choice="auto",
