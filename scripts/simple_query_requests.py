@@ -10,7 +10,7 @@ API_KEY = os.getenv("API_KEY")
 # Configuration
 model_name = os.getenv("MODEL", "deepseek-v3")
 question_level = os.getenv("LEVEL", "easy")
-stream = os.getenv("STREAM", "True").lower() == "false"  # Configurable stream option
+stream = os.getenv("STREAM", "True").lower() == "true"  # Configurable stream option
 
 task_prompt = {
     "hard": "请找到一个三位整数 ( y )，使得 ( y + \text{reverse}(y) = 1000 )。那么 ( y ) 的值是多少？",
