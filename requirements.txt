@@ -1,3 +1,5 @@
-requests
-cicada-agent
-toolregistry
+openai
+anthropic
+google-genai
+python-dotenv
+httpx
