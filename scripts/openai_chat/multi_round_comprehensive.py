@@ -67,6 +67,8 @@ def handle_tool_calls(client, model, messages, tools, stream):
         print("[Assistant] ", end="")
         full_text = ""
         for chunk in follow_up:
+            if not chunk.choices:
+                continue
             token = chunk.choices[0].delta.content
             if token:
                 print_stream_token(token)

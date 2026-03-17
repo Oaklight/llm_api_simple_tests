@@ -52,6 +52,8 @@ def main():
             print("[Assistant] ", end="")
             full_text = ""
             for chunk in response:
+                if not chunk.choices:
+                    continue
                 token = chunk.choices[0].delta.content
                 if token:
                     print_stream_token(token)
