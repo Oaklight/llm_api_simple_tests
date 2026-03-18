@@ -1,5 +1,8 @@
 # LLM API 简单测试
 
+[![Last Commit](https://img.shields.io/github/last-commit/Oaklight/llm_api_simple_tests?color=green)](https://github.com/Oaklight/llm_api_simple_tests)
+[![License](https://img.shields.io/github/license/Oaklight/llm_api_simple_tests?color=green)](https://github.com/Oaklight/llm_api_simple_tests/blob/master/LICENSE)
+
 使用官方 SDK 的 LLM 提供商 API 独立测试脚本。每个提供商有 5 个测试脚本，覆盖常见场景。
 
 ## 支持的提供商

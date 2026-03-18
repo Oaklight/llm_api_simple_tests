@@ -1,5 +1,8 @@
 # LLM API Simple Tests
 
+[![Last Commit](https://img.shields.io/github/last-commit/Oaklight/llm_api_simple_tests?color=green)](https://github.com/Oaklight/llm_api_simple_tests)
+[![License](https://img.shields.io/github/license/Oaklight/llm_api_simple_tests?color=green)](https://github.com/Oaklight/llm_api_simple_tests/blob/master/LICENSE)
+
 Standalone test scripts for LLM provider APIs using official SDKs. Each provider gets 5 test scripts covering common scenarios.
 
 ## Supported Providers
